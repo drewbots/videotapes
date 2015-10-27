@@ -1,0 +1,152 @@
+.grouptag {
+    width: 160px;
+    position: absolute;
+    background-color: #ed008c;
+    padding: 10px;
+    color: #FFF;
+    font-size: 13px;
+    right: 0;
+    margin-top: 34px;
+}
+
+.grouptag a {
+	color: #ffffff;
+}
+
+.grouptag a:hover {
+	color: #0093FF;
+}
+
+.grouptag ol,li {
+    margin: 0;
+    padding: 0;
+}
+
+.grouptag ol {
+    counter-reset: foo;
+    display: table;
+}
+
+.grouptag li {
+    list-style: none;
+    counter-increment: foo;
+    display: table-row;
+}
+
+.grouptag li::before {
+    content: "»";
+    display: table-cell;
+    text-align: right;
+    padding-right: .3em;
+}
+
+.subgroup-topcontainer {
+    padding-left: 32px;
+    overflow: auto;
+}
+.group .subgroup-topcontainer  h4 {
+    color: #0093FF;
+    padding: 4px 10px 0 10px;
+    font-size: 13px;
+}
+.subgroup {
+    padding-left: 32px;
+    overflow: auto;
+}
+.group {
+    overflow: auto;
+    margin-top: 70px;
+}
+.group .subgroup h4 {
+    color: #0093FF;
+    font-size: 13px;
+    margin: 64px 0 30px 0;
+}
+
+@media (max-width:767px) {
+	.grouptag {
+		display: none;
+	}
+
+	.subgroup-topcontainer {
+		padding-left: 0;
+	}
+
+}
+
+.for-snap {
+}
+.fixed {
+}
+
+.projectcontent {
+	margin-top: 36px;
+}
+
+.fullimg img {
+	width: 100%;
+}
+
+.fullscreen-fw {
+	background:url('../images/fartwatch2.jpg') no-repeat center center;
+	background-position: 50% 50%;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	height: 631px;
+	width: 100%;
+}
+
+/* all links */
+.bs-docs-sidebar .nav>li>a {
+    text-decoration: none;
+    border-left: 4px solid transparent;
+    padding: 0px 0 0 20px;
+    font-size: 13px;
+}
+
+/* nested links */
+.bs-docs-sidebar .nav .nav>li>a {
+    padding: 0 0 0px 30px;
+    font-size: 11px;
+    line-height: 20px;
+}
+
+/* active & hover links */
+.bs-docs-sidebar .nav>.active>a, 
+.bs-docs-sidebar .nav>li>a:hover, 
+.bs-docs-sidebar .nav>li>a:focus {
+    color: #ed008c;                 
+    text-decoration: none;          
+    background-color: transparent;  
+    border-left-color: #ed008c; 
+}
+/* all active links */
+.bs-docs-sidebar .nav>.active>a, 
+.bs-docs-sidebar .nav>.active:hover>a,
+.bs-docs-sidebar .nav>.active:focus>a {
+
+}
+/* nested active links */
+.bs-docs-sidebar .nav .nav>.active>a, 
+.bs-docs-sidebar .nav .nav>.active:hover>a,
+.bs-docs-sidebar .nav .nav>.active:focus>a,
+.bs-docs-sidebar .nav .nav>a,
+.bs-docs-sidebar .nav .nav>li>a:hover {
+    font-weight: 500;
+    color: #0093FF; 
+    border-left: #0093FF 4px solid;
+}
+
+/* hide inactive nested list */
+.bs-docs-sidebar .nav ul.nav {
+    display: none; 
+    margin-top: 0;   
+    margin-left: 0;
+}
+/* show active nested list */
+.bs-docs-sidebar .nav>.active>ul.nav {
+    display: block; 
+}
+
