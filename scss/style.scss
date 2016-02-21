@@ -1,0 +1,80 @@
+@import "compass/css3";
+
+/**
+ * This is 8bit css art.
+ * Please change color below in brush-color.
+ * Only css color values are allowed.
+ */
+$brush-color: green;
+
+
+
+
+// box for paiting.
+.paintbox {
+  width: 800px;
+  height: 600px;
+  margin: 50px auto;
+  border: 5px solid;
+}
+
+.btn {
+  display: block;
+  float: left;
+  width: 10px;
+  height: 10px;
+  appearance: none;
+  background: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  &:checked {
+    //fallback color.
+    background-color: #000;
+    
+    background: $brush-color;
+  }
+}
+
+// Reset.
+.reset {
+  @include button(lighten(indianred, 10%), #fff, 4);
+  font-size: 1.1em;
+  padding: 4px 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// override css from external pen.
+body {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+}
