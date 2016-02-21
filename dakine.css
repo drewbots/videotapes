@@ -1,0 +1,56 @@
+
+body {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+}
+
+.paintbox {
+  width: 800px;
+  height: 600px;
+  margin: 50px auto;
+  border: 5px solid;
+}
+
+.btn {
+  display: block;
+  float: left;
+  width: 10px;
+  height: 10px;
+  appearance: none;
+  background: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.btn:checked {
+  background-color: #000;
+  background: green;
+}
+
+.reset {
+  border: 0;
+  outline: 0;
+  -webkit-appearence: none;
+  background-color: #d98383;
+  background: #d98383;
+  color: #fff;
+  box-shadow: 1px 0px 0 indianred, 1px 1px 0 indianred, 2px 1px 0 indianred, 2px 2px 0 indianred, 3px 2px 0 indianred, 3px 3px 0 indianred, 4px 3px 0 indianred, 4px 4px 0 indianred;
+  position: relative;
+  font-size: 1.1em;
+  padding: 4px 8px;
+}
+
+.reset:hover {
+  background: #d37070;
+}
+
+.reset:active {
+  top: 4px;
+  left: 4px;
+  background: indianred;
+  box-shadow: none;
+}
