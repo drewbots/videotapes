@@ -22,11 +22,11 @@ $(window).load(function(){
 
 	$("html,body").animate({scrollTop: 800}, 1); 
 	
-		$(function() {
-        $('.lazy').lazy({
-            delay: 5000
-        });
-    });
+$(document).ready(function () {
+    setTimeout(function(){
+        $('#paint').fadeIn(100);
+    }, 500);
+});
 
 });
 
@@ -38,9 +38,9 @@ $(window).load(function(){
 
 	<div style="height: 100%; width: 100%;" data-1000="background-image:linear-gradient(0deg, hsl(0, 100%, 50%), hsl(40, 50%, 50%));" data-15000="background-image:linear-gradient(3600deg, hsl(360, 100%, 50%), hsl(400, 100%, 50%));">
 	</div>
-
-		<img class="lazy" style="z-index:200; position:relative; width:100%;" data-src="examples/images/veli.gif">
-
+		<div>
+		<img id="paint" style="" src="examples/images/veli.gif">
+</div>
 
 	<!-- <div id="progress" data-0="width:0%;background:hsl(200, 100%, 50%);" data-end="width:100%;background:hsl(920, 100%, 50%);"></div> -->
 
@@ -124,6 +124,17 @@ $(window).load(function(){
 			}
 		}
 	});
+
+	$(document).ready(function () {
+      setTimeout(function () {
+        $('.load-delay').each(function () {
+            var imagex = $(this);
+            var imgOriginal = imagex.data('original');
+            $(imagex).attr('src', imgOriginal);
+        });
+    }, 3000);
+	});
+
 </script>
 
 </body>

@@ -75,6 +75,13 @@ h4 {
 	margin:1em 0;
 }
 
+#paint {
+	z-index:200; 
+	position:relative; 
+	width:100%;
+	display: none;
+}
+
 #progress {
 	height:2%;
 	background:#444;
