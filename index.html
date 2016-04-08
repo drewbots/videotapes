@@ -13,7 +13,7 @@
 <script src="http://code.jquery.com/jquery-1.6.4.js" type="text/javascript"></script>
 <script src="https://raw.githubusercontent.com/lazd/iNoBounce/master/inobounce.js
 " type="text/javascript"></script>
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.6.7/jquery.lazy.min.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.6.7/jquery.lazy.min.js"></script>
 
 
 <script type="text/javascript">
@@ -22,9 +22,11 @@ $(window).load(function(){
 
 	$("html,body").animate({scrollTop: 800}, 1); 
 	
-	$(function() {
-	        $('.lazy').lazy();
-	    });
+		$(function() {
+        $('.lazy').lazy({
+            delay: 5000
+        });
+    });
 
 });
 
