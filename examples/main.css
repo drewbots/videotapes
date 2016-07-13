@@ -153,10 +153,6 @@ h4 {
 	z-index: 300;
 }
 
-#transform img {
-  width: 140px;
-}
-
 .image1 {
 	left: -60px;
   top: -120px;
@@ -293,3 +289,13 @@ h4 {
 .twitter-share-button, .twitter-follow-button {
 	vertical-align:middle;
 }
+
+@media (max-width: 768px) {
+
+#transform img {
+  width: 140px;
+}
+
+}
+
+
